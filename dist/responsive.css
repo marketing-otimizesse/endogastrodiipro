@@ -1,0 +1,588 @@
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	/* ================== */
+	.menu-box{
+		height: 80px;
+		left: 0;
+  		margin: auto;
+  		top: 0 !important;
+  		width: 100%;
+  		position: fixed !important;
+  		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  		-webkit-animation: 300ms running fadeInDown;
+  		animation: 500ms running fadeInUp;
+  		-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  		transition: 0.5s !important;
+  		background-color: #002c5d;
+  		z-index: 9999 !important;
+  		animation-name: slideInDown;
+  		animation-duration: 1.5s;
+	}
+	.topbar {
+	    display: none;
+	}
+	.menu-box.sticky-nav .sticky-logo {
+	    display: none;
+	}
+	/* ==================== */
+   .hero-section .hero-slider .shape-image2 {
+    	right: 24%;
+    	top: 35%;
+    	position: absolute;
+	}
+
+	.hero-section .hero-slider .slider-content .text-section h1 {
+    	color: #002c5d;
+    	font-size: 60px;
+	}
+
+	.app-download-section .bg-image .text-content .image{
+		display: flex;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		width: 80%;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		margin-right: 0;
+	}
+
+	.app-download-section .bg-image .text-content .image .app-stor {
+  		margin-right: 0px;
+	}
+
+	.app-download-section .bg-image .image {
+    	margin-bottom: 0;
+	}
+
+
+	.blog-section {
+    	padding: 0px 0px 100px 0px;
+    	position: relative;
+	}
+
+	.blog-section .blog-item .category h5 {
+    	left: -32px;
+    	top: 100px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+		/* ================== */
+	.menu-box{
+		height: 80px;
+		left: 0;
+  		margin: auto;
+  		top: 0 !important;
+  		width: 100%;
+  		position: fixed !important;
+  		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  		-webkit-animation: 300ms running fadeInDown;
+  		animation: 500ms running fadeInUp;
+  		-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  		transition: 0.5s !important;
+  		background-color: #002c5d;
+  		z-index: 9999 !important;
+  		animation-name: slideInDown;
+  		animation-duration: 1.5s;
+	}
+
+
+	/* ==================== */
+   .hero-section .hero-slider .slider-content .text-section h1 {
+    	color: #002c5d;
+    	font-size: 44px;
+	}
+
+	.hero-section .hero-slider .slider-content .text-section p {
+    	padding: 15px 0px 20px 0px;
+	}
+
+	.hero-section .hero-slider .slider-content .button a {
+    	padding: 18px 8px;
+
+	}
+
+	.hero-section .hero-slider .shape-image2 {
+    	right: 29%;
+    	top: 17%;
+    	position: absolute;
+	}
+
+	.about-section .containt-wraper .about-title h1 {
+    	font-size: 30px;
+	}
+
+	.about-section .containt-wraper .signetire h5 {
+    	margin-top: 10px;
+	}
+
+	.about-section .containt-wraper .left-spase .shape-image3 {
+    	right: 423px;
+    	bottom: -58px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 27px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 33px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+    	font-size: 35px;
+	}
+
+	.app-download-section .bg-image .text-content .image{
+		display: flex;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		width: 80%;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		margin-right: 0;
+	}
+
+	.app-download-section .bg-image .text-content .image .app-stor {
+  		margin-right: 0px;
+	}
+
+	.app-download-section .bg-image .image {
+    	margin-bottom: 0;
+	}
+	.app-download-section .bg-image .text-content .image {
+    	margin-top: 20px;
+	}
+
+	.blog-section {
+    	padding: 0px 0px 70px 0px;
+	}
+
+	.blog-item {
+    	margin-bottom: 30px;
+	}
+
+	
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+		/* ================== */
+	.menu-box{
+		height: 80px;
+		left: 0;
+  		margin: auto;
+  		top: 0 !important;
+  		width: 100%;
+  		position: fixed !important;
+  		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  		-webkit-animation: 300ms running fadeInDown;
+  		animation: 500ms running fadeInUp;
+  		-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  		transition: 0.5s !important;
+  		background-color: #002c5d;
+  		z-index: 9999 !important;
+  		animation-name: slideInDown;
+  		animation-duration: 1.5s;
+	}
+
+
+	/* ==================== */
+
+    .hero-section .hero-slider .slider-content .text-section h1 {
+    	color: #002c5d;
+    	font-size: 44px;
+	}
+
+	.hero-section .hero-slider .slider-content .text-section p {
+    	padding: 15px 0px 20px 0px;
+	}
+
+	.hero-section .hero-slider .shape-image2 {
+    	right: 23%;
+    	top: 19%;
+	}
+
+
+	.hero-section .hero-slider .shape-image1 {
+    	right: 8%;
+    	top: 72%;
+	}
+
+	.book-section .book-content .booking-form-inner .form-control.date {
+    	padding: 25px 24px;
+	}
+
+	.book-section .book-content .booking-form-inner select {
+    	padding: 15px 42px;
+	}
+
+	.about-section .containt-wraper .about-title h1 {
+    	font-size: 35px;
+    	margin-top: 35px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 33px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+    	font-size: 35px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 30px;
+	}
+
+	.call-do-section .call-do-content .button a {
+    	margin-top: 30px;
+	}
+
+	.tab-section .tab-title h1 {
+    	font-size: 41px;
+	}
+
+	.team-section .team-content .main-content .text-content .icon {
+    	margin-bottom: 30px;
+    	justify-content: left;
+	}
+
+	.team-section .team-content .main-content .text-content .button a {
+    	left: 139px;
+    	bottom: 35px;
+	}
+
+	.app-download-section .bg-image .text-content h1 {
+    	font-size: 40px;
+    	margin-top: 100px;
+	}
+
+	.app-download-section .bg-image .text-content .image{
+		display: flex;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		width: 80%;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		margin-right: 0;
+	}
+
+	.app-download-section .bg-image .text-content .image .app-stor {
+  		margin-right: 0px;
+	}
+
+	.app-download-section .bg-image .text-content p {
+    	margin: 20px 0px 35px 0px;
+    	padding-bottom: 20px;
+	}
+
+	.blog-item {
+    	margin-bottom: 30px;
+	}
+
+	.subscrib-section .icon {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.footer-section .image {
+    	text-align: center;
+	}
+
+	.footer-section p {
+    	text-align: center;
+	}
+
+	.footer-section .button {
+    	text-align: center;
+	}
+
+	.footer-section h2 {
+    	text-align: center;
+    	margin-top: 26px;
+	}
+
+	.footer-section  li {
+    	list-style: none;
+    	text-align: center;
+	}
+
+	.footer-news.d-flex.align-items-center {
+    	text-align: center;
+    	justify-content: center;
+	}
+
+	.align-items-center {
+    	justify-content: center;
+	}
+
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+			/* ================== */
+	.menu-box{
+		height: 80px;
+		left: 0;
+  		margin: auto;
+  		top: 0 !important;
+  		width: 100%;
+  		position: fixed !important;
+  		box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  		-webkit-animation: 300ms running fadeInDown;
+  		animation: 500ms running fadeInUp;
+  		-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  		transition: 0.5s !important;
+  		background-color: #002c5d;
+  		z-index: 9999 !important;
+  		animation-name: slideInDown;
+  		animation-duration: 1.5s;
+	}
+
+	.menu-box.sticky-nav .sticky-logo {
+    	margin-left: 29px;
+	}
+
+	/* ==================== */
+   .hero-section .hero-slider .slider-content .text-section h1 {
+    	color: #002c5d;
+    	font-size: 38px;
+	}
+
+	.hero-section .hero-slider .slider-content .text-section p {
+    	padding: 15px 0px 20px 0px;
+	}
+
+	.hero-section .hero-slider .slider-content .button .left{
+		margin-bottom: 20px;
+	}
+
+	.hero-section .hero-slider .slider-content .button i{
+		padding-left: 20px;
+	}
+
+	.hero-section .hero-slider .shape-image2 {
+    	display:none;
+	}
+
+
+	.hero-section .hero-slider .shape-image1 {
+    	display:none;
+	}
+
+	.book-section .book-content .booking-form-inner .form-control.date {
+    	padding: 25px 32px;
+	}
+
+	.book-section .book-content .booking-form-inner select {
+    	padding: 15px 29px;
+	}
+
+	.about-section .containt-wraper .about-title h1 {
+    	font-size: 26px;
+    	margin-top: 35px;
+	}
+
+	.about-section .containt-wraper .left-spase .shape-image3 {
+    	right: 0;
+    	bottom: -169px;
+	}
+
+	.feature-secction .feature-title h1 {
+    	font-size: 30px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 17px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 19px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+    	font-size: 33px;
+	}
+
+	.call-do-section .call-do-content .button a {
+    	margin-top: 30px;
+	}
+	.tab-section .tab-title h1 {
+		font-size: 33px;
+	}
+   .team-section .team-content .main-content .text-content .button a {
+    	padding: 8px 20px;
+    	left: -150px;
+    	bottom: 35px;
+	}
+	.tab-section .accordion .accordion-content .left-content h2 {
+		font-size: 25px;
+	}
+	.tab-section .accordion .accordion-content {
+		padding: 0px 12px;
+	}
+	.team-section .team-title h2 {
+    	font-size: 35px;
+	}
+
+	.team-section .team-title p {
+    	font-size: 12px;
+	}
+	.team-section .team-content .main-content .text-content .hart-icon a {
+    	right: 220px;
+    	top: 21px;
+	}
+
+	.app-download-section .bg-image .text-content h1 {
+    	font-size: 28px;
+    	margin-top: 99px;
+	}
+
+	.app-download-section .bg-image .text-content .image{
+		display: flex;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		width: 80%;
+	}
+
+	.app-download-section .bg-image .text-content .image img{
+		margin-right: 0;
+	}
+
+	.app-download-section .bg-image .text-content .image .app-stor {
+  		margin-right: 0px;
+	}
+
+	.app-download-section .bg-image .text-content p {
+    	margin: 20px 0px 35px 0px;
+    	padding-bottom: 20px;
+	}
+
+	.blog-item {
+    	margin-bottom: 30px;
+	}
+
+	.subscrib-section .icon {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.footer-section .image {
+    	text-align: center;
+	}
+
+	.footer-section p {
+    	text-align: center;
+	}
+
+	.footer-section .button {
+    	text-align: center;
+	}
+
+	.footer-section h2 {
+    	text-align: center;
+    	margin-top: 26px;
+	}
+
+	.footer-section  li {
+    	list-style: none;
+    	text-align: center;
+	}
+
+	.footer-news.d-flex.align-items-center {
+    	text-align: center;
+    	justify-content: center;
+	}
+
+	.align-items-center {
+    	justify-content: center;
+	}
+	.service-bg .service-title-wraper p {
+		margin-top: -39px;
+		padding-bottom: 20px;
+	}
+
+}
+
+/* ===========================BLOG-DETAIL PAGE START===========================  */
+/* ===========================************===========================  */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.blog-detail-section .main-section .text-detail .form .name input {
+	    margin: 10px 0px;
+	    width: 210%;
+
+	}
+
+	.blog-detail-section .main-section .text-detail .form .number input {
+    	margin: 10px 0px;
+	    width: 210%;
+	}
+
+	.blog-detail-section .main-section .text-detail .form textarea {
+    	width: 210%;
+    }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .blog-detail-section .main-section .text-detail .form .name input {
+	    margin: 10px 0px;
+	    width: 100%;
+
+	}
+
+	.blog-detail-section .main-section .text-detail .form .number input {
+    	margin: 10px 0px;
+	    width: 100%;
+	}
+
+	.blog-detail-section .main-section .text-detail .form textarea {
+    	width: 100%;
+    }
+
+    .blog-detail-section .main-section .text-detail .form .submit {
+	    margin-bottom: 30px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	.blog-detail-section .main-section .text-detail .form .name input {
+	    margin: 10px 0px;
+	    width: 100%;
+
+	}
+
+	.blog-detail-section .main-section .text-detail .form .number input {
+    	margin: 10px 0px;
+	    width: 100%;
+	}
+
+	.blog-detail-section .main-section .text-detail .form textarea {
+    	width: 100%;
+    }
+
+    .blog-detail-section .main-section .text-detail .form .submit {
+	    margin-bottom: 30px;
+	}
+	.go-top-btn-wraper {
+		display: none;
+	}
+}
+/* ===========================BLOG-DETAIL PAGE end===========================  */
+/* ===========================************===========================  */
