@@ -18,8 +18,8 @@ jobs:
       with:
         node-version: '16' # Specify the Node.js version. Ensure this matches your local Node.js version or a compatible one.
 
-    - name: Install dependencies (if any)
-      run: npm install # Install npm packages if you had a package.json
+    # - name: Install dependencies (if any)
+    #   run: npm install # Install npm packages if you had a package.json
 
     - name: Run build script
       run: node build.js # Execute your build script to generate the 'docs' folder
