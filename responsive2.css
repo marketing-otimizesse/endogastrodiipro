@@ -1,0 +1,352 @@
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	.hero-section .text-section h2 {
+	    font-size: 57px;
+	}
+
+	.hero-section .text-section h1 {
+	    font-size: 57px;
+	}
+
+	.feature-section .feature-item1 .feature-content .phone i {
+	    padding: 8px;
+	}
+
+	.feature-section .feature-item1 .feature-content .phone h4{
+		font-size: 16px;
+	}
+
+	.feature-section .feature-content .button a {
+	    margin-top: 1px;
+	}
+
+	.feature-section .feature-item3 .feature-content p {
+	    margin-bottom: 8px;
+	}
+
+	.testimonial-section .owl-nav button.owl-next {
+	    right: 59px;
+	    bottom: -129px;
+	}
+
+	.testimonial-section .owl-nav button.owl-prev {
+	    left: 362px;
+	    bottom: -128px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+	    font-size: 41px;
+	}
+
+	.team-section .single-box .text-content .button a {
+	    left: 162px;
+	    bottom: 26px;
+	}
+
+	.contact-section .image img {
+	    width: 142%;
+	}
+
+	.contact-section .contact-box .main-contant select {
+	    padding: 15px 38px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.hero-section .text-section h2 {
+	    font-size: 41px;
+	}
+
+	.hero-section .text-section h1 {
+	    font-size: 41px;
+	}
+
+	.feature-section .feature-item3 .feature-content .time-bar {
+	    margin: 4px 0px;
+	}
+
+	.about-section .right-content .right-title h2 {
+	    font-size: 30px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+	    font-size: 31px;
+	}
+
+	.testimonial-section .testi-slider2 .testi-box .testi-content h2 {
+	    font-size: 35px;
+	}
+
+	.testimonial-section .owl-nav button.owl-next {
+	    right: 15%;
+	    bottom: -156px;
+	}
+
+	.testimonial-section .owl-nav button.owl-prev {
+	    left: 57%;
+	    bottom: -156px;
+	}
+
+	.team-section .single-box .text-content .button a {
+	    left: 190px;
+	    bottom: 26px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 27px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 33px;
+	}
+
+	.contact-section .contact-box .main-contant select{
+	    width: 100%;
+	     
+	}
+
+	.contact-section .contact-box .main-contant select.others{
+	    margin: 20px 0px 13px 0px;
+	}
+
+	.contact-section .contact-box .main-contant input.contact {
+	    margin: 6px 0px 18px 0px;
+	}
+
+	.contact-section .contact-box .main-contant input.time.time-middle {
+	    margin: 20px 0px;
+	}
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.hero-section .text-section h2 {
+	    font-size: 55px;
+	}
+
+	.hero-section .text-section h1 {
+	    font-size: 55px;
+	}
+
+	.about-section .right-content .right-title h2 {
+	    font-size: 40px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+	    font-size: 40px;
+	    margin-bottom: 28px;
+	}
+
+	.service-bg .service-title-wraper p {
+		font-size: 16px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	.testimonial-section .owl-nav button.owl-next {
+	    display: none;
+	}
+
+	.testimonial-section .owl-nav button.owl-prev {
+	    display: none;
+	}
+
+	.team-section .title h2 {
+		margin-bottom: 35px;
+	}
+	.team-section .title .team-button a {
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 33px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+    	font-size: 35px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 30px;
+	}
+
+	.call-do-section .call-do-content .button a {
+    	margin-top: 30px;
+	}
+
+	.contact-section .contact-box .main-contant select{
+	    width: 100%;
+	     
+	}
+
+	.contact-section .contact-box .main-contant select.others{
+	    margin: 20px 0px; 
+	}
+
+	.contact-section .contact-box .main-contant input.contact {
+	    margin: 6px 0px 18px 0px;
+	}
+
+	.contact-section .contact-box .main-contant input.time.time-middle {
+	    margin: 20px 0px;
+	}
+
+	.subscrib-section .icon {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.footer-section .image {
+    	text-align: center;
+	}
+
+	.footer-section p {
+    	text-align: center;
+	}
+
+	.footer-section .button {
+    	text-align: center;
+	}
+
+	.footer-section h2 {
+    	text-align: center;
+    	margin-top: 26px;
+	}
+
+	.footer-section  li {
+    	list-style: none;
+    	text-align: center;
+	}
+
+	.footer-news.d-flex.align-items-center {
+    	text-align: center;
+    	justify-content: center;
+	}
+
+	.align-items-center {
+    	justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	.hero-section .text-section h2 {
+	    font-size: 36px;
+	}
+
+	.hero-section .text-section h1 {
+	    font-size: 36px;
+	}
+
+	.hero-section .button a.left {
+	    padding: 18px 5px;
+	}
+
+	.about-section .right-content .right-title h2 {
+	    font-size: 26px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+	    font-size: 27px;
+	}
+
+	.testimonial-section .owl-nav button.owl-next {
+	    display: none;
+	}
+
+	.testimonial-section .owl-nav button.owl-prev {
+	    display: none;
+	}
+
+	.testimonial-section .testi-slider2 .testi-box .testi-content .icon{
+		display: none;
+	}
+
+	.testimonial-section .testi-slider2 .testi-box .testi-content h2 {
+	    font-size: 24px;
+	}
+
+	.team-section .title h2 {
+	    font-size: 29px;
+	}
+
+
+	.team-section .single-box .text-content .button a {
+	    left: 158px;
+	    bottom: 28px;
+	}
+
+	.call-do-section .call-do-content .left-content .title p {
+    	font-size: 17px;
+	}
+
+	.call-do-section .call-do-content .left-content .title h1 {
+    	font-size: 19px;
+	}
+
+	.service-bg .service-title-wraper h1 {
+    	font-size: 35px;
+	}
+
+	.call-do-section .call-do-content .button a {
+    	margin-top: 30px;
+	}
+
+	.contact-section .contact-box .main-contant select{
+	    width: 100%;
+	     
+	}
+
+	.contact-section .contact-box .main-contant select.others{
+	    margin: 20px 0px; 
+	}
+
+	.contact-section .contact-box .main-contant input.contact {
+	    margin: 6px 0px 18px 0px;
+	}
+
+	.contact-section .contact-box .main-contant input.time.time-middle {
+	    margin: 20px 0px;
+	}
+
+
+	.subscrib-section .icon {
+    	text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.footer-section .image {
+    	text-align: center;
+	}
+
+	.footer-section p {
+    	text-align: center;
+	}
+
+	.footer-section .button {
+    	text-align: center;
+	}
+
+	.footer-section h2 {
+    	text-align: center;
+    	margin-top: 26px;
+	}
+
+	.footer-section  li {
+    	list-style: none;
+    	text-align: center;
+	}
+
+	.footer-news.d-flex.align-items-center {
+    	text-align: center;
+    	justify-content: center;
+	}
+
+	.align-items-center {
+    	justify-content: center;
+	}
+	.go-top-btn-wraper {
+		display: none;
+	}
+}
