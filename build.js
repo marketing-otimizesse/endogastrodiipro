@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const layoutsDir = path.join(__dirname, 'layouts');
-const distDir = path.join(__dirname, 'dist');
+const distDir = path.join(__dirname, 'docs'); // Changed from 'dist' to 'docs'
 
 const htmlFiles = [
     'index.html',
@@ -14,7 +14,7 @@ const htmlFiles = [
     'team.html',
 ];
 
-// Ensure dist directory exists
+// Ensure docs directory exists
 if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir);
 }
@@ -94,7 +94,7 @@ try {
     fs.copyFileSync(path.join(__dirname, 'responsive.css'), path.join(distDir, 'responsive.css'));
     // copy also index2, style2, responsive2 if they exist, but they were deleted, so no need
 
-    console.log('Build completed successfully in the "dist" directory!');
+    console.log('Build completed successfully in the "docs" directory!');
 
 } catch (error) {
     console.error('Error during build process:', error);

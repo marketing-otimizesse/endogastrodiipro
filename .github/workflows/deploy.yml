@@ -1,0 +1,34 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Trigger the workflow on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Use a fresh Ubuntu virtual machine
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3 # Checkout the repository code
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # Specify the Node.js version. Ensure this matches your local Node.js version or a compatible one.
+
+    - name: Install dependencies (if any)
+      run: npm install # Install npm packages if you had a package.json
+
+    - name: Run build script
+      run: node build.js # Execute your build script to generate the 'docs' folder
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3 # Use a popular action to deploy to gh-pages
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub Token for authentication
+        publish_dir: ./docs # Specify the directory to deploy (docs)
+        publish_branch: main # Deploy to the main branch (as configured by user)
+        # cname: example.com # Uncomment and set your custom domain if you have one
+        # external_repository: user/repo # Uncomment if deploying to a different repository
