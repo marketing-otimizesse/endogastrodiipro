@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mediken Medical & Hospital HTML5 Template</title>
+    <title>EndogastroDii Pro - Comunidade Exclusiva de Gastroenterologia</title>
 
     <!-- Fonts=== font-family: 'Dosis', sans-serif;  font-family: 'Roboto', sans-serif; font-family:'Josefin';-->
 
@@ -39,6 +39,88 @@
     <!-- Style Css -->
     <link rel="stylesheet" href="style.css" class="css" />
     <link rel="stylesheet" href="responsive.css" class="css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #39cabb; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #002c5d; }
+
+        /* Glassmorphism Header */
+        .sticky-nav {
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Stats Section */
+        .stats-bar { background: #002c5d; padding: 60px 0; color: #fff; }
+        .stat-item { text-align: center; }
+        .stat-item h2 { color: #39cabb; font-size: 48px; font-weight: 800; margin-bottom: 5px; }
+        .stat-item p { font-size: 14px; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: translateY(-50%) scale(1.1);
+            color: #fff;
+        }
+
+        /* Shine Effect Animation */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shine:after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: rotate(30deg);
+            transition: none;
+            animation: shine 4s infinite;
+        }
+        @keyframes shine {
+            0% { left: -60%; }
+            20% { left: 120%; }
+            100% { left: 120%; }
+        }
+
+        /* FAQ Styling */
+        .faq-section { background: #f9fdfc; padding: 100px 0; }
+        .faq-item { background: #fff; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .faq-question { padding: 25px 30px; cursor: pointer; font-weight: 700; color: #002c5d; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid transparent; }
+        .faq-item.active .faq-question { border-bottom: 1px solid #eee; color: #39cabb; }
+        .faq-answer { padding: 0 30px; max-height: 0; overflow: hidden; transition: all 0.4s ease; color: #666; font-size: 15px; }
+        .faq-item.active .faq-answer { padding: 20px 30px; max-height: 200px; }
+        .faq-question i { transition: transform 0.3s; }
+        .faq-item.active .faq-question i { transform: rotate(180deg); }
+    </style>
   </head>
   <body>
     <!-- loder -->
@@ -84,9 +166,9 @@
       <div class="main-menu">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#assinatura">Assinatura</a></li>
             <li><a href="#especialistas">Especialistas</a></li>
             <li><a href="contact.html">Contato</a></li>
           </ul>
@@ -94,7 +176,7 @@
       </div>
       <div class="right-content">
         <div class="button">
-          <a href="#cursos">INSCREVA-SE AGORA
+          <a href="#assinatura">ASSINE AGORA
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -105,9 +187,9 @@
   <div class="mobile-menu">
     <nav class="main-menu">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Página Inicial</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#assinatura">Assinatura</a></li>
         <li><a href="#especialistas">Especialistas</a></li>
         <li><a href="contact.html">Contato</a></li>
       </ul>
@@ -129,20 +211,20 @@
         <div class="container">
           <div class="row">
             <div class="slider-content">
-              <div class="col-md-6">
+              <div class="col-md-7">
                                   <div class="text-section">
                                     <h1>
-                                      Domine o Futuro da <br />
+                                      Acelere sua Carreira na <br />
                                       <span>Gastroenterologia</span>
                                     </h1>
                                     <p>
-                                      Cursos online inovadores com os maiores especialistas do Brasil. Transforme sua carreira com conhecimento de ponta.
+                                      Acesse aulas exclusivas, casos clínicos reais e atualizações científicas diretamente no seu Telegram. O conhecimento dos maiores especialistas, onde você estiver.
                                     </p>
                                   </div>
                                   <div class="button">
-                                    <a href="#cursos" class="left">VER CURSOS</a>
+                                    <a href="#assinatura" class="left">QUERO ASSINAR AGORA</a>
                                     <a href="#sobre"
-                                      >SAIBA MAIS
+                                      >CONHEÇA A COMUNIDADE
                                       <i class="fa fa-long-arrow-right" aria-hidden="true"></i
                                     ></a>
                                   </div>              </div>
@@ -150,52 +232,11 @@
           </div>
         </div>
         <div class="shape-image1 bounce-animate">
-          <img src="image/Home-1-Recovered.jpg" alt="" />
+          <img src="image/Home-1-Recovered.jpg" alt="Educação Médica Continuada" />
         </div>
 
         <div class="shape-image2 bounce-animate3">
-          <img src="image/Home-2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div
-        class="hero-slider d-flex align-items-center"
-        style="
-          background-image: url('image/banner-img.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center;
-        "
-      >
-        <div class="container">
-          <div class="row">
-            <div class="slider-content">
-              <div class="col-md-6">
-                                  <div class="text-section">
-                                    <h1>
-                                      Domine o Futuro da <br />
-                                      <span>Gastroenterologia</span>
-                                    </h1>
-                                    <p>
-                                      Cursos online inovadores com os maiores especialistas do Brasil. Transforme sua carreira com conhecimento de ponta.
-                                    </p>
-                                  </div>
-                                  <div class="button">
-                                    <a href="#cursos">VER CURSOS</a>
-                                    <a href="#sobre"
-                                      >SAIBA MAIS
-                                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i
-                                    ></a>
-                                  </div>              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shape-image1 bounce-animate">
-          <img src="image/Home-1-Recovered.jpg" alt="" />
-        </div>
-
-        <div class="shape-image2 bounce-animate3">
-          <img src="image/Home-2.jpg" alt="" />
+          <img src="image/Home-2.jpg" alt="Gastroenterologia de Ponta" />
         </div>
       </div>
     </div>
@@ -209,7 +250,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 right-spase">
               <div class="image">
-                <img src="image/about1.png" alt="Especialistas em gastroenterologia colaborando" />
+                <img src="image/about1.png" alt="Comunidade EndogastroDii Pro" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 left-spase">
@@ -218,7 +259,7 @@
                   <span>O que é a</span> EndogastroDii Pro?
                 </h1>
                 <p>
-                  A EndogastroDii Pro é a mais completa plataforma de educação continuada para gastroenterologistas que buscam excelência. Nascemos da união de especialistas renomados com o propósito de compartilhar técnicas inovadoras e conhecimento prático que fazem a diferença no dia a dia do consultório e nos procedimentos de alta complexidade.
+                  Domine as condutas mais avançadas e técnicas transformadoras da gastroenterologia através de aulas práticas e discussões de casos reais que elevam sua excelência clínica. Unimos o ensino acadêmico rigoroso com a praticidade do dia a dia para transformar sua prática clínica e endoscópica.
                 </p>
               </div>
               <div class="list">
@@ -226,25 +267,25 @@
                   <div class="icon">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                   </div>
-                  <p>Aprenda com os maiores especialistas do mercado</p>
+                  <p>Aulas direto no seu celular via Telegram</p>
                 </div>
                 <div class="icon-box d-flex align-items-center">
                   <div class="icon">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                   </div>
-                  <p>Domine técnicas e procedimentos inovadores</p>
+                  <p>Discussão de casos clínicos complexos</p>
                 </div>
                 <div class="icon-box d-flex align-items-center">
                   <div class="icon">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                   </div>
-                  <p>Acesso flexível 24/7 para estudar no seu ritmo</p>
+                  <p>Networking com especialistas de todo o Brasil</p>
                 </div>
               </div>
 
               <div class="signetire">
-                <h5>Pronto para evoluir?</h5>
-                <h2>Conheça nossos cursos</h2>
+                <h5>Pronto para elevar seu nível?</h5>
+                <h2>Entre para a nossa Comunidade VIP</h2>
                 <div class="image">
                   <img src="image/sign.png" alt="Assinatura" />
                 </div>
@@ -264,7 +305,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="feature-title">
-              <h1><span>Mediken</span> Here To Help <br />You See Better</h1>
+              <h1>Por que fazer parte da <span>Nossa Comunidade?</span></h1>
             </div>
           </div>
         </div>
@@ -272,15 +313,15 @@
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-feature">
               <div class="feature-icon-thumb">
-                <img src="image/flat1.png" alt="" />
+                <img src="image/flat1.png" alt="Aulas Práticas" />
               </div>
               <div class="feature-content">
-                <p>Appoinment</p>
-                <h2>Nearest Medical</h2>
+                <p>Conteúdo VIP</p>
+                <h2>Aulas Práticas</h2>
               </div>
               <div class="feature-button">
-                <a href="#"
-                  ><span>All Doctor</span
+                <a href="#assinatura"
+                  ><span>Assinar Agora</span
                   ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
                 ></a>
               </div>
@@ -289,15 +330,15 @@
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-feature">
               <div class="feature-icon-thumb">
-                <img src="image/flat2.png" alt="" />
+                <img src="image/flat2.png" alt="Especialistas" />
               </div>
               <div class="feature-content">
-                <p>Contact With</p>
-                <h2>Expert Doctors</h2>
+                <p>Mentoria</p>
+                <h2>Especialistas</h2>
               </div>
               <div class="feature-button">
-                <a href="#"
-                  ><span>All Doctor</span
+                <a href="#especialistas"
+                  ><span>Ver Mentores</span
                   ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
                 ></a>
               </div>
@@ -306,15 +347,15 @@
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-feature">
               <div class="feature-icon-thumb">
-                <img src="image/flat3.png" alt="" />
+                <img src="image/flat3.png" alt="Networking" />
               </div>
               <div class="feature-content">
-                <p>Search DPT</p>
-                <h2>Departments</h2>
+                <p>Comunidade</p>
+                <h2>Networking</h2>
               </div>
               <div class="feature-button">
-                <a href="#"
-                  ><span>All Doctor</span
+                <a href="#assinatura"
+                  ><span>Entrar no Grupo</span
                   ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
                 ></a>
               </div>
@@ -322,12 +363,12 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-feature item-4">
-              <h3>Oppening <br />hours</h3>
-              <p>Monday</p>
-              <h4>8.00AM - 5.00PM</h4>
+              <h3>Acesso <br />Imediato</h3>
+              <p>Disponível</p>
+              <h4>24 Horas por Dia</h4>
               <div class="bar"></div>
-              <p>Saturday - Thusday</p>
-              <h2>8.00AM - 5.00PM</h2>
+              <p>Suporte Exclusivo</p>
+              <h2>7 Dias por Semana</h2>
             </div>
           </div>
         </div>
@@ -336,17 +377,17 @@
 
     <!-- ===========================feature section end============================ -->
 
-    <!-- ===========================Service section start============================ -->
-    <div id="cursos" class="service-bg">
+    <!-- ===========================Subscription section start============================ -->
+    <div id="assinatura" class="service-bg">
       <div class="container">
         <div class="service-title-wraper">
           <div class="row">
             <div class="col-md-6">
-              <h1><span>Cursos</span> Desenhados para a Excelência</h1>
+              <h1><span>Assinatura</span> VIP EndogastroDii Pro</h1>
             </div>
             <div class="col-md-6">
               <p>
-                Explore nossos programas e encontre o caminho ideal para sua especialização. Conteúdo de ponta, ministrado pelos melhores especialistas.
+                Tenha acesso imediato a todo o nosso ecossistema de ensino. Uma assinatura única, conhecimento ilimitado e networking de alto nível diretamente no seu Telegram.
               </p>
             </div>
           </div>
@@ -355,113 +396,57 @@
     </div>
     <div class="service-section">
       <div class="container">
-        <div class="service-slider owl-carousel">
-          <div class="slider-item">
-            <div
-              class="slider-image"
-              style="
-                background-image: url('image/service1.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-              "
-            >
-              <div class="icon-wraper">
-                <div class="icon">
-                  <img src="image/service-icon1.png" alt="" />
-                </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-8">
+            <div class="pricing-card" style="background: #fff; border: 2px solid #39cabb; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+              <div class="card-header" style="background: #002c5d; padding: 40px 30px; text-align: center; color: #fff;">
+                <h3 style="color: #39cabb; font-size: 28px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px;">Plano VIP Mensal</h3>
+                <p style="color: #fff; opacity: 0.8; font-size: 16px;">Acesso total e imediato</p>
               </div>
-            </div>
+              <div class="card-body" style="padding: 40px 35px;">
+                <div class="price-box" style="text-align: center; margin-bottom: 35px;">
+                  <span style="font-size: 20px; color: #727272; text-decoration: line-through;">R$ 147,90</span>
+                  <h2 style="color: #002c5d; font-size: 56px; font-weight: 800; margin: 5px 0;">R$ 97,90<small style="font-size: 18px; color: #727272; font-weight: 400;">/mês</small></h2>
+                  <p style="color: #39cabb; font-weight: 600; font-size: 14px; margin-top: 5px;">*Cancele quando quiser</p>
+                </div>
+                
+                <ul class="features-list" style="margin-bottom: 40px; padding: 0;">
+                  <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Aulas Semanais Exclusivas
+                  </li>
+                  <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Discussão de Casos Clínicos
+                  </li>
+                  <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Materiais e E-books em PDF
+                  </li>
+                  <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Comunidade VIP no Telegram
+                  </li>
+                  <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Networking com Grandes Nomes
+                  </li>
+                </ul>
 
-            <div class="text-content">
-              <h2>Endoscopia Terapêutica Avançada</h2>
-              <p>Técnicas imersivas de ressecção endoscópica, tratamento de varizes esofágicas e muito mais.</p>
-              <div class="number-box">
-                <div class="service-button">
-                  <a href="#"
-                    ><span>Saiba Mais</span
-                    ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
-                  ></a>
-                </div>
-                <div class="number">
-                  <h2>01</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-item">
-            <div
-              class="slider-image"
-              style="
-                background-image: url('image/service2.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-              "
-            >
-              <div class="icon-wraper">
-                <div class="icon">
-                  <img src="image/service-icon2.png" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div class="text-content">
-              <h2>Doenças Inflamatórias Intestinais</h2>
-              <p>Abordagem completa sobre DII, com foco em terapias biológicas e manejo de casos complexos.</p>
-              <div class="number-box">
-                <div class="service-button">
-                  <a href="#"
-                    ><span>Saiba Mais</span
-                    ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
-                  ></a>
-                </div>
-                <div class="number">
-                  <h2>02</h2>
+                <div class="cta-box" style="text-align: center;">
+                  <a href="https://pay.hotmart.com/seu-link-aqui" target="_blank" class="btn-shine" style="background: #39cabb; color: #fff; padding: 20px 40px; border-radius: 50px; display: block; font-weight: 800; font-size: 18px; text-transform: uppercase; transition: all 0.3s; box-shadow: 0 10px 20px rgba(57, 202, 187, 0.3);">
+                    Quero ser VIP agora <i class="fa fa-rocket" style="margin-left: 10px;"></i>
+                  </a>
+                  <p style="margin-top: 15px; font-size: 13px; color: #999;">Pagamento seguro via Hotmart</p>
+                  
+                  <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-shield" style="color: #39cabb;"></i> Garantia 7 Dias</div>
+                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-lock" style="color: #39cabb;"></i> Checkout Seguro</div>
+                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-bolt" style="color: #39cabb;"></i> Acesso Imediato</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="slider-item">
-            <div
-              class="slider-image"
-              style="
-                background-image: url('image/service3.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-              "
-            >
-              <div class="icon-wraper">
-                <div class="icon">
-                  <img src="image/service-icon3.png" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div class="text-content">
-              <h2>Ultrassonografia Endoscópica</h2>
-              <p>Domine a ecoendoscopia para diagnósticos precisos e intervenções guiadas com os melhores da área.</p>
-              <div class="number-box">
-                <div class="service-button">
-                  <a href="#"
-                    ><span>Saiba Mais</span
-                    ><i class="fa fa-long-arrow-right" aria-hidden="true"></i
-                  ></a>
-                </div>
-                <div class="number">
-                  <h2>03</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-    <!-- ===========================Service section end============================ -->
+    <!-- ===========================Subscription section end============================ -->
     
     <!-- ===========================team section start============================ -->
     <div id="especialistas" class="team-section">
@@ -482,7 +467,8 @@
                 <div class="text-content">
                   <h2>Dr. Ricardo Almeida</h2>
                   <span>Especialista em Endoscopia Avançada</span>
-                  <p>Referência nacional em procedimentos terapêuticos e autor de diversas publicações científicas na área de endoscopia digestiva.</p>
+                  <p>Referência nacional em procedimentos terapêuticos e autor de diversas publicações científicas.</p>
+                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DR. RICARDO <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -495,7 +481,8 @@
                 <div class="text-content">
                   <h2>Dra. Carolina Furtado</h2>
                   <span>Especialista em Doenças Inflamatórias</span>
-                  <p>Doutora pela USP, Dra. Carolina é uma das maiores vozes no tratamento de Doenças Inflamatórias Intestinais.</p>
+                  <p>Doutora pela USP, Dra. Carolina é uma das maiores vozes no tratamento de DII.</p>
+                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DRA. CAROLINA <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -508,7 +495,8 @@
                 <div class="text-content">
                   <h2>Dr. Marcos Andrade</h2>
                   <span>Especialista em Hepatologia</span>
-                  <p>Vasta experiência em transplantes hepáticos e manejo de doenças crônicas do fígado em centros de excelência.</p>
+                  <p>Vasta experiência em transplantes hepáticos e manejo de doenças crônicas do fígado.</p>
+                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DR. MARCOS <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -521,7 +509,8 @@
                 <div class="text-content">
                   <h2>Dra. Beatriz Lima</h2>
                   <span>Especialista em Gastroenterologia Pediátrica</span>
-                  <p>Especialista no cuidado infantil, com foco em alergias alimentares e distúrbios digestivos complexos na infância.</p>
+                  <p>Especialista no cuidado infantil, com foco em alergias e distúrbios digestivos complexos.</p>
+                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DRA. BEATRIZ <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -531,92 +520,39 @@
     </div>
     <!-- ===========================team section end============================ -->
 
-    <!-- ===========================blog section start============================ -->
-    <div class="blog-section">
-      <div class="container">
-        <div class="blog-title">
-          <h2><span>Artigos &</span> Notícias</h2>
-          <p>
-            Quickly expedite interactive technology via timely we <br />promote
-            B2C deliverables whereas timely.
-          </p>
+    <!-- ===========================FAQ section start============================ -->
+    <div class="faq-section" id="faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-title" style="text-align: center; margin-bottom: 50px;">
+                        <h2 style="font-size: 36px; color: #002c5d; font-weight: 800;">Dúvidas <span>Frequentes</span></h2>
+                        <p style="color: #727272;">Tire suas principais dúvidas antes de entrar na nossa comunidade.</p>
+                    </div>
+                    
+                    <div class="faq-wrapper">
+                        <div class="faq-item">
+                            <div class="faq-question">Como recebo o meu acesso? <i class="fa fa-chevron-down"></i></div>
+                            <div class="faq-answer">Imediatamente após a confirmação do pagamento, você receberá um e-mail com as instruções e o link exclusivo para entrar no nosso grupo VIP do Telegram.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">As aulas ficam gravadas? <i class="fa fa-chevron-down"></i></div>
+                            <div class="faq-answer">Sim! Todas as aulas e discussões ficam salvas no histórico do Telegram e também em nossa biblioteca exclusiva, para você assistir quando e onde quiser.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Posso cancelar quando quiser? <i class="fa fa-chevron-down"></i></div>
+                            <div class="faq-answer">Com certeza. Nossa assinatura é recorrente (mensal), mas não possui fidelidade. Você pode cancelar sua renovação a qualquer momento.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">É indicado para residentes? <i class="fa fa-chevron-down"></i></div>
+                            <div class="faq-answer">Sim! A comunidade é perfeita tanto para residentes que buscam uma base prática sólida, quanto para especialistas que desejam se atualizar com discussões de alto nível.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="blog-item">
-              <div class="image">
-                <img src="image/blog2.jpg" alt="" />
-              </div>
-              <div class="category">
-                <h5>Dynoclogist</h5>
-              </div>
-              <div class="text-wraper">
-                <h3><a href="blog-detail.html">Great food eating today.</a></h3>
-                <p>
-                  Quickly expedite interactive technology promote deliverables
-                </p>
-                <div class="bar"></div>
-                <div class="name-date d-flex align-items-center">
-                  <div class="image">
-                    <img src="image/blog-icon.png" alt="" />
-                  </div>
-                  <h4><span>Dr. Alex John</span>January 24, 2024</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12">
-            <div class="blog-item">
-              <div class="image">
-                <img src="image/blog1.jpg" alt="" />
-              </div>
-              <div class="category">
-                <h5>Dynoclogist</h5>
-              </div>
-              <div class="text-wraper">
-                <h3><a href="blog-detail.html">Great food eating today.</a></h3>
-                <p>
-                  Quickly expedite interactive technology promote deliverables
-                </p>
-                <div class="bar"></div>
-                <div class="name-date d-flex align-items-center">
-                  <div class="image">
-                    <img src="image/blog-icon.png" alt="" />
-                  </div>
-                  <h4><span>Dr. Alex John</span>January 24, 2024</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12">
-            <div class="blog-item">
-              <div class="image">
-                <img src="image/blog3.jpg" alt="" />
-              </div>
-              <div class="category">
-                <h5>Dynoclogist</h5>
-              </div>
-              <div class="text-wraper">
-                <h3><a href="blog-detail.html">Great food eating today.</a></h3>
-                <p>
-                  Quickly expedite interactive technology promote deliverables
-                </p>
-                <div class="bar"></div>
-                <div class="name-date d-flex align-items-center">
-                  <div class="image">
-                    <img src="image/blog-icon.png" alt="" />
-                  </div>
-                  <h4><span>Dr. Alex John</span>January 24, 2024</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- ===========================blog section end============================ -->
+    <!-- ===========================FAQ section end============================ -->
 
 <!-- ===========================footer section start============================ -->
 <div class="footer-section">
@@ -626,13 +562,13 @@
         <div class="image">
           <a href="index.html"><img src="image/endogastrodiipro.svg" alt="EndogastroDii Pro" width="180" /></a>
         </div>
-        <p>A mais completa plataforma de educação continuada para gastroenterologistas que buscam excelência e conhecimento de ponta.</p>
+        <p>Domine as condutas mais avançadas e técnicas transformadoras da gastroenterologia através de aulas práticas e discussões de casos reais que elevam sua excelência clínica.</p>
       </div>
       <div class="col-lg-4 col-md-6 col-sm-12">
         <h2>Navegação</h2>
         <ul>
           <li><a href="#sobre"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Sobre</a></li>
-          <li><a href="#cursos"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Cursos</a></li>
+          <li><a href="#assinatura"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Assinatura</a></li>
           <li><a href="#especialistas"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Especialistas</a></li>
           <li><a href="contact.html"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Contato</a></li>
         </ul>
@@ -713,5 +649,25 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20tenho%20dúvida%20sobre%20a%20assinatura%20EndogastroDii%20Pro" class="whatsapp-float" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FAQ Script -->
+    <script>
+      document.querySelectorAll('.faq-question').forEach(item => {
+          item.addEventListener('click', event => {
+              const parent = item.parentElement;
+              if (parent.classList.contains('active')) {
+                  parent.classList.remove('active');
+              } else {
+                  document.querySelectorAll('.faq-item').forEach(child => child.classList.remove('active'));
+                  parent.classList.add('active');
+              }
+          })
+      })
+    </script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     $('.mobile-menu nav').meanmenu({
         meanScreenWidth: "990",
         meanMenuContainer: ".mobile-menu",
-        onePage: false,
+        onePage: true,
     });	
 	
 
