@@ -111,6 +111,32 @@
         .faq-item.active .faq-answer { padding: 20px 30px; max-height: 200px; }
         .faq-question i { transition: transform 0.3s; }
         .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+        /* Mobile Menu Logo Fix */
+        .mean-container .mean-bar::before {
+            display: none !important;
+        }
+        .mobile-menu-area {
+            position: relative;
+            background: #002c5d; /* Fundo azul marinho para o cabeçalho mobile */
+            height: 100px;
+        }
+        .mobile-logo {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            z-index: 999999;
+            line-height: 0;
+        }
+        .mobile-logo img {
+            height: 80px; /* Logo 3x maior aproximado para manter proporção elite */
+            width: auto;
+        }
+        /* Ajuste do botão do menu para centralizar verticalmente no novo header */
+        .mean-container a.meanmenu-reveal {
+            padding: 38px 15px !important;
+        }
     </style>
   </head>
   <body>
@@ -144,7 +170,7 @@
             </div>
             <div class="icon-content">
               <p>Atendimento via WhatsApp</p>
-              <span>+55 (11) 99999-9999</span>
+              <span>(32) 99818-4330</span>
             </div>
           </div>
         </div>
@@ -175,6 +201,9 @@
   </div>
 </header>
 <div class="mobile-menu-area d-sm-block d-md-block d-lg-none">
+  <div class="mobile-logo">
+    <a href="index.html"><img src="image/endogastrodiipro.svg" alt="EndogastroDii Pro" width="140" /></a>
+  </div>
   <div class="mobile-menu">
     <nav class="main-menu">
       <ul>
@@ -247,24 +276,32 @@
             <div class="col-lg-6 col-md-6 left-spase">
               <div class="about-title">
                 <h1>
-                  <span>O que é a</span> EndogastroDii Pro?
+                  <span>O que é a</span> ENDOGASTRO DII PRO?
                 </h1>
                 <p>
-                  Domine as condutas mais avançadas e técnicas transformadoras da gastroenterologia através de aulas práticas e discussões de casos reais que elevam sua excelência clínica. Unimos o ensino acadêmico rigoroso com a praticidade do dia a dia para transformar sua prática clínica e endoscópica.
+                  A ENDOGASTRO DII PRO é um projeto de ensino desenvolvido para capacitar médicos no tratamento das Doenças Inflamatórias Intestinais (DIIs), com domínio das condutas mais avançadas e terapias inovadoras. <br><br>
+                  Por meio de aulas práticas e discussões de casos clínicos, o programa integra o conhecimento acadêmico à realidade do dia a dia, contribuindo para a evolução da prática clínica.
                 </p>
               </div>
               <div class="list">
+                <h5 style="color: #002c5d; font-weight: 700; margin-bottom: 15px;">O que você encontra no programa:</h5>
                 <div class="icon-box d-flex align-items-center">
                   <div class="icon">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                   </div>
-                  <p>Aulas direto no seu celular via Telegram</p>
+                  <p>Aulas a distância em plataforma digital, ministradas por especialistas</p>
                 </div>
                 <div class="icon-box d-flex align-items-center">
                   <div class="icon">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                   </div>
-                  <p>Discussão de casos clínicos complexos</p>
+                  <p>Conteúdo acessível diretamente no celular, via Telegram</p>
+                </div>
+                <div class="icon-box d-flex align-items-center">
+                  <div class="icon">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  </div>
+                  <p>Discussão de casos clínicos do dia a dia e casos complexos</p>
                 </div>
                 <div class="icon-box d-flex align-items-center">
                   <div class="icon">
@@ -374,11 +411,11 @@
         <div class="service-title-wraper">
           <div class="row">
             <div class="col-md-6">
-              <h1><span>Assinatura</span> VIP EndogastroDii Pro</h1>
+              <h1><span>ASSINATURA VIP</span> – ENDOGASTRO DII PRO</h1>
             </div>
             <div class="col-md-6">
               <p>
-                Tenha acesso imediato a todo o nosso ecossistema de ensino. Uma assinatura única, conhecimento ilimitado e networking de alto nível diretamente no seu Telegram.
+                A Assinatura VIP é o acesso ao nosso programa de ensino contínuo, com aulas quinzenais ao vivo e conteúdos exclusivos ministrados por especialistas.
               </p>
             </div>
           </div>
@@ -391,45 +428,38 @@
           <div class="col-lg-5 col-md-8">
             <div class="pricing-card" style="background: #fff; border: 2px solid #39cabb; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 45px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
               <div class="card-header" style="background: #002c5d; padding: 40px 30px; text-align: center; color: #fff;">
-                <h3 style="color: #39cabb; font-size: 28px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px;">Plano VIP Mensal</h3>
-                <p style="color: #fff; opacity: 0.8; font-size: 16px;">Acesso total e imediato</p>
+                <h3 style="color: #39cabb; font-size: 28px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px;">PLANO VIP MENSAL</h3>
+                <p style="color: #fff; opacity: 0.8; font-size: 16px;">Garanta sua vaga e evolua constantemente</p>
               </div>
               <div class="card-body" style="padding: 40px 35px;">
                 <div class="price-box" style="text-align: center; margin-bottom: 35px;">
-                  <span style="font-size: 20px; color: #727272; text-decoration: line-through;">R$ 147,90</span>
-                  <h2 style="color: #002c5d; font-size: 56px; font-weight: 800; margin: 5px 0;">R$ 97,90<small style="font-size: 18px; color: #727272; font-weight: 400;">/mês</small></h2>
-                  <p style="color: #39cabb; font-weight: 600; font-size: 14px; margin-top: 5px;">*Cancele quando quiser</p>
+                  <p style="font-size: 18px; color: #555; line-height: 1.4;">Um modelo dinâmico, sempre atualizado, pensado para acompanhar a evolução do médico na prática clínica em DII.</p>
                 </div>
                 
+                <h5 style="color: #002c5d; font-weight: 700; margin-bottom: 20px;">O que está incluso:</h5>
                 <ul class="features-list" style="margin-bottom: 40px; padding: 0;">
                   <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
-                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Aulas Semanais Exclusivas
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Aulas quinzenais com especialistas
                   </li>
                   <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
-                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Discussão de Casos Clínicos
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Conteúdo atualizado continuamente
                   </li>
                   <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
-                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Materiais e E-books em PDF
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Acesso via plataforma digital e Telegram
                   </li>
                   <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
-                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Comunidade VIP no Telegram
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Discussão de casos clínicos
                   </li>
                   <li style="margin-bottom: 15px; font-size: 16px; display: flex; align-items: center; color: #555;">
-                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Networking com Grandes Nomes
+                    <i class="fa fa-check-circle" style="color: #39cabb; font-size: 20px; margin-right: 15px;"></i> Interação e networking nacional
                   </li>
                 </ul>
 
                 <div class="cta-box" style="text-align: center;">
-                  <a href="https://pay.hotmart.com/seu-link-aqui" target="_blank" class="btn-shine" style="background: #39cabb; color: #fff; padding: 20px 40px; border-radius: 50px; display: block; font-weight: 800; font-size: 18px; text-transform: uppercase; transition: all 0.3s; box-shadow: 0 10px 20px rgba(57, 202, 187, 0.3);">
-                    Quero ser VIP agora <i class="fa fa-rocket" style="margin-left: 10px;"></i>
+                  <a href="https://wa.me/5532998184330?text=Olá,%20gostaria%20de%20me%20matricular%20no%20Plano%20VIP%20da%20EndogastroDii%20Pro." target="_blank" class="btn-shine" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 50px; display: block; font-weight: 800; font-size: 18px; text-transform: uppercase; transition: all 0.3s; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);">
+                    👉 Matricule-se agora <i class="fa-brands fa-whatsapp" style="margin-left: 10px;"></i>
                   </a>
-                  <p style="margin-top: 15px; font-size: 13px; color: #999;">Pagamento seguro via Hotmart</p>
-                  
-                  <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
-                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-shield" style="color: #39cabb;"></i> Garantia 7 Dias</div>
-                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-lock" style="color: #39cabb;"></i> Checkout Seguro</div>
-                    <div style="font-size: 11px; color: #727272;"><i class="fa fa-bolt" style="color: #39cabb;"></i> Acesso Imediato</div>
-                  </div>
+                  <p style="margin-top: 15px; font-size: 14px; color: #666; font-weight: 600;">Fale com um especialista para garantir sua vaga</p>
                 </div>
               </div>
             </div>
@@ -459,7 +489,7 @@
                   <h2>Dr. Ricardo Almeida</h2>
                   <span>Especialista em Endoscopia Avançada</span>
                   <p>Referência nacional em procedimentos terapêuticos e autor de diversas publicações científicas.</p>
-                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DR. RICARDO <i class="fa fa-angle-right"></i></a>
+                  <a href="https://wa.me/5532998184330?text=Olá,%20gostaria%20de%20falar%20com%20o%20especialista%20Dr.%20Ricardo%20Almeida." target="_blank" style="color: #39cabb; font-weight: bold; font-size: 14px;">FALAR COM DR. RICARDO <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -473,7 +503,7 @@
                   <h2>Dra. Carolina Furtado</h2>
                   <span>Especialista em Doenças Inflamatórias</span>
                   <p>Doutora pela USP, Dra. Carolina é uma das maiores vozes no tratamento de DII.</p>
-                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DRA. CAROLINA <i class="fa fa-angle-right"></i></a>
+                  <a href="https://wa.me/5532998184330?text=Olá,%20gostaria%20de%20falar%20com%20a%20especialista%20Dra.%20Carolina%20Furtado." target="_blank" style="color: #39cabb; font-weight: bold; font-size: 14px;">FALAR COM DRA. CAROLINA <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -487,7 +517,7 @@
                   <h2>Dr. Marcos Andrade</h2>
                   <span>Especialista em Hepatologia</span>
                   <p>Vasta experiência em transplantes hepáticos e manejo de doenças crônicas do fígado.</p>
-                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DR. MARCOS <i class="fa fa-angle-right"></i></a>
+                  <a href="https://wa.me/5532998184330?text=Olá,%20gostaria%20de%20falar%20com%20o%20especialista%20Dr.%20Marcos%20Andrade." target="_blank" style="color: #39cabb; font-weight: bold; font-size: 14px;">FALAR COM DR. MARCOS <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -501,7 +531,7 @@
                   <h2>Dra. Beatriz Lima</h2>
                   <span>Especialista em Gastroenterologia Pediátrica</span>
                   <p>Especialista no cuidado infantil, com foco em alergias e distúrbios digestivos complexos.</p>
-                  <a href="#assinatura" style="color: #39cabb; font-weight: bold; font-size: 14px;">ASSINAR COM DRA. BEATRIZ <i class="fa fa-angle-right"></i></a>
+                  <a href="https://wa.me/5532998184330?text=Olá,%20gostaria%20de%20falar%20com%20a%20especialista%20Dra.%20Beatriz%20Lima." target="_blank" style="color: #39cabb; font-weight: bold; font-size: 14px;">FALAR COM DRA. BEATRIZ <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
@@ -577,7 +607,7 @@
           <div class="icon">
             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </div>
-          <p>+55 (11) 99999-9999</p>
+          <p>(32) 99818-4330</p>
         </div>
       </div>
     </div>
@@ -642,7 +672,7 @@
     <script src="assets/js/script.js"></script>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5511999999999?text=Olá,%20tenho%20dúvida%20sobre%20a%20assinatura%20EndogastroDii%20Pro" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5532998184330?text=Olá,%20tenho%20dúvida%20sobre%20a%20assinatura%20EndogastroDii%20Pro" class="whatsapp-float" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
