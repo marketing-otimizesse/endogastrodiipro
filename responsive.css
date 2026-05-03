@@ -586,3 +586,28 @@
 }
 /* ===========================BLOG-DETAIL PAGE end===========================  */
 /* ===========================************===========================  */
+
+/* Mobile Menu Elite Customizations */
+.mean-container .mean-bar::before {
+    display: none !important;
+}
+.mobile-menu-area {
+    position: relative;
+    background: #002c5d;
+    height: 100px;
+}
+.mobile-logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 999999;
+    line-height: 0;
+}
+.mobile-logo img {
+    width: 140px !important;
+    height: auto !important;
+}
+.mean-container a.meanmenu-reveal {
+    padding: 38px 15px !important;
+}

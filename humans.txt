@@ -1,0 +1,12 @@
+/* TEAM */
+    Developer: Senior Full Stack Engineer (20+ years experience)
+    Site: https://endogastrodiipro.com.br/
+    From: Brazil
+
+/* THANKS */
+    Name: Dr. Júlio Chebli & Equipe EndogastroDii Pro
+
+/* SITE */
+    Standards: HTML5, CSS3, JavaScript (ES6+), PWA
+    Components: Bootstrap, jQuery, OwlCarousel
+    Software: Optimized for Elite Performance and SEO Domain
