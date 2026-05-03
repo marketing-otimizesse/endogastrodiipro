@@ -15,89 +15,66 @@
 // Slider =========
 $(document).ready(function(){
 
-	$('.heroSlider').owlCarousel({
-		    loop:true,
-		    nav:false,
-		    dots: false,
-		    items:1,
-
-		})
-
-	$('.service-slider').owlCarousel({
-	    loop:true,
-	    margin:30,
-	    nav:false,
-	    dots: true,
-	    dotsEach: 1,
-	    responsive: {
-             0: {
-                 items: 1
-             },
-             767: {
-                 items: 1
-             },
-             991: {
-                 items: 2
-             },
-             1000: {
-                 items: 3
-             },
-             1199: {
-                 items: 3
-             },
-             1920: {
-                 items: 3
-            }
+    if ($.fn.owlCarousel) {
+        if ($('.heroSlider').length) {
+            $('.heroSlider').owlCarousel({
+                loop:true,
+                nav:false,
+                dots: false,
+                items:1,
+            });
         }
-	});
 
-
-
-	$('.online-class-slider').owlCarousel({
-	    loop:true,
-	    margin:20,
-	    nav:false,
-	    dots: true,
-	    dotsEach: 1,
-	    responsive: {
-             0: {
-                 items: 1
-             },
-             767: {
-                 items: 1
-             },
-             991: {
-                 items: 1
-             },
-             1000: {
-                 items: 2
-             },
-             1199: {
-                 items: 2
-             },
-             1920: {
-                 items: 2
-            }
+        if ($('.service-slider').length) {
+            $('.service-slider').owlCarousel({
+                loop:true,
+                margin:30,
+                nav:false,
+                dots: true,
+                dotsEach: 1,
+                responsive: {
+                    0: { items: 1 },
+                    767: { items: 1 },
+                    991: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
         }
-	});
 
+        if ($('.online-class-slider').length) {
+            $('.online-class-slider').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:false,
+                dots: true,
+                dotsEach: 1,
+                responsive: {
+                    0: { items: 1 },
+                    767: { items: 1 },
+                    991: { items: 1 },
+                    1000: { items: 2 }
+                }
+            });
+        }
 
+        if ($('.testy-slider').length) {
+            $('.testy-slider').owlCarousel({
+                loop:true,
+                nav:false,
+                dots: true,
+                items:1,
+            });
+        }
 
-	$('.testy-slider').owlCarousel({
-	    loop:true,
-		nav:false,
-		dots: true,
-		items:1,
-	});
-
-
-    $('.testi-slider2').owlCarousel({
-        loop:true,
-        nav:true,
-        dots: false,
-        items:1,
-    });
-
+        if ($('.testi-slider2').length) {
+            $('.testi-slider2').owlCarousel({
+                loop:true,
+                nav:true,
+                dots: false,
+                items:1,
+            });
+        }
+    }
 
 
 
