@@ -467,7 +467,15 @@
         }
     </style>
   </head>
-  <body>
+  <body style="padding-top: 45px;">
+    <!-- Top Notification Banner -->
+    <div class="top-announcement-bar" style="background: linear-gradient(90deg, #ff3e3e 0%, #d62828 100%); color: #fff; text-align: center; padding: 12px 10px; font-weight: 800; font-size: 15px; position: fixed; top: 0; width: 100%; z-index: 10001; box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+        <span class="d-none d-md-inline">🔥 AULA INAUGURAL HOJE ÀS 19:30: </span>
+        <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" style="color: #fff; text-decoration: none; margin-left: 10px; background: rgba(255,255,255,0.2); padding: 4px 15px; border-radius: 50px; border: 1px solid #fff; transition: 0.3s;" onmouseover="this.style.background='#fff'; this.style.color='#ff3e3e'" onmouseout="this.style.background='rgba(255,255,255,0.2)'; this.style.color='#fff'">
+            ENTRAR NA SALA AGORA <i class="fa fa-video-camera" style="margin-left: 5px;"></i>
+        </a>
+    </div>
+
     <!-- loder -->
     <div class="loader-wrapper">
       <div class="loader"></div>
@@ -772,10 +780,15 @@
                     </div>
 
                     <div class="event-cta mt-5">
-                        <a href="https://forms.gle/JnoRWNX1aY9tKkYL6" target="_blank" class="btn-shine" style="background: #39cabb; color: #fff; padding: 22px 50px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 20px; text-transform: uppercase; text-decoration: none; box-shadow: 0 15px 35px rgba(57, 202, 187, 0.4);">
-                            FAZER MINHA INSCRIÇÃO AGORA <i class="fa fa-long-arrow-right ml-2"></i>
-                        </a>
-                        <p class="mt-3" style="font-size: 14px; opacity: 0.7;">* Vagas limitadas para a aula ao vivo.</p>
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3" style="gap: 20px;">
+                            <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" class="btn-shine" style="background: #ff3e3e; color: #fff; padding: 22px 50px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 20px; text-transform: uppercase; text-decoration: none; box-shadow: 0 15px 35px rgba(255, 62, 62, 0.4); margin-bottom: 20px;">
+                                ENTRAR NA AULA AGORA <i class="fa fa-video-camera ml-2"></i>
+                            </a>
+                            <a href="https://forms.gle/JnoRWNX1aY9tKkYL6" target="_blank" style="color: #39cabb; padding: 22px 50px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 18px; text-transform: uppercase; text-decoration: none; border: 2px solid #39cabb; margin-bottom: 20px;">
+                                AINDA NÃO ME INSCREVI <i class="fa fa-pencil ml-2"></i>
+                            </a>
+                        </div>
+                        <p class="mt-3" style="font-size: 14px; opacity: 0.7;">* Clique no botão vermelho para acessar a sala do Google Meet diretamente.</p>
                     </div>
                 </div>
             </div>
@@ -1253,14 +1266,14 @@
 
     <!-- Floating Countdown Widget -->
     <div class="countdown-float">
-        <div class="float-label">Corre, clique aqui!</div>
-        <div class="pulse-ring"></div>
+        <div class="float-label">AULA HOJE! CLIQUE AQUI</div>
+        <div class="pulse-ring" style="border-color: #ff3e3e;"></div>
         <div class="float-icon">
-            <i class="fa-regular fa-clock"></i>
+            <i class="fa-regular fa-clock" style="color: #ff3e3e;"></i>
         </div>
         <div class="float-content">
             <h4>Aula Inaugural</h4>
-            <p>14 de Maio - 19:30</p>
+            <p style="color: #ff3e3e;">14 de Maio - 19:30</p>
             <div class="float-timer">
                 <div class="timer-unit">
                     <span id="float-days">00</span>
@@ -1275,7 +1288,7 @@
                     <small>Min</small>
                 </div>
             </div>
-            <a href="https://forms.gle/JnoRWNX1aY9tKkYL6" target="_blank" class="float-btn">GARANTIR MINHA VAGA</a>
+            <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" class="float-btn" style="background: #ff3e3e; box-shadow: 0 4px 10px rgba(255, 62, 62, 0.3);">ENTRAR NA AULA AGORA</a>
         </div>
     </div>
 
