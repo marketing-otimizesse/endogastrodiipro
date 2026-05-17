@@ -467,15 +467,7 @@
         }
     </style>
   </head>
-  <body style="padding-top: 45px;">
-    <!-- Top Notification Banner -->
-    <div class="top-announcement-bar" style="background: linear-gradient(90deg, #ff3e3e 0%, #d62828 100%); color: #fff; text-align: center; padding: 12px 10px; font-weight: 800; font-size: 15px; position: fixed; top: 0; width: 100%; z-index: 10001; box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-        <span class="d-none d-md-inline">🔥 AULA INAUGURAL HOJE ÀS 19:30: </span>
-        <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" style="color: #fff; text-decoration: none; margin-left: 10px; background: rgba(255,255,255,0.2); padding: 4px 15px; border-radius: 50px; border: 1px solid #fff; transition: 0.3s;" onmouseover="this.style.background='#fff'; this.style.color='#ff3e3e'" onmouseout="this.style.background='rgba(255,255,255,0.2)'; this.style.color='#fff'">
-            ENTRAR NA SALA AGORA <i class="fa fa-video-camera" style="margin-left: 5px;"></i>
-        </a>
-    </div>
-
+  <body style="padding-top: 0px;">
     <!-- loder -->
     <div class="loader-wrapper">
       <div class="loader"></div>
@@ -745,56 +737,48 @@
     </div>
     <!-- Hero section end ===================== -->
 
-    <!-- Event Countdown Section Start -->
-    <div class="event-countdown-section">
+    <!-- Enrollment & Recorded Class Section Start -->
+    <div class="enrollment-section" style="background: linear-gradient(135deg, #002c5d 0%, #001a38 100%); padding: 100px 0; color: #fff; position: relative; overflow: hidden;">
         <div class="container">
-            <div class="row align-items-center text-center">
-                <div class="col-lg-12">
-                    <span class="event-badge">Grande Marco do Projeto</span>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="event-badge" style="background: #ff3e3e;">Matrículas Abertas</span>
                     <div class="event-title">
-                        <h2>Aula de Apresentação Inaugural <br><span style="color: #39cabb;">ENDOGASTRO DII PRO</span></h2>
+                        <h2 style="font-size: 42px; font-weight: 900; line-height: 1.2; color: #ffffff;">Nova Turma: Início previsto em <span style="color: #39cabb;">10 de Junho de 2026</span></h2>
                     </div>
-                    <div class="event-details">
-                        <span><i class="fa fa-calendar"></i> Quinta-feira, 14 de maio</span>
-                        <span class="ml-md-4"><i class="fa fa-clock"></i> 19:30 – 20:30 (Horário de Brasília)</span>
-                        <span class="ml-md-4"><i class="fa fa-video-camera"></i> Online via Google Meet</span>
+                    <p style="font-size: 18px; opacity: 0.9; margin: 25px 0;">
+                        O período de inscrições para a nova turma da **EndogastroDii Pro** está oficialmente aberto. Garanta sua vaga para a especialização médica que está transformando o manejo de DII no Brasil.
+                    </p>
+                    <div class="event-cta mt-4">
+                        <a href="https://wa.me/5532998184330?text=Olá! Assisti a aula inaugural e gostaria de mais informações sobre a matrícula para a nova turma de 10 de junho." target="_blank" class="btn-shine" style="background: #25d366; color: #fff; padding: 20px 40px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 18px; text-transform: uppercase; text-decoration: none; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);">
+                            QUERO MINHA VAGA NA NOVA TURMA <i class="fa-brands fa-whatsapp ml-2"></i>
+                        </a>
                     </div>
-
-                    <div class="countdown-container" id="countdown">
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="days">00</span>
-                            <span class="countdown-label">Dias</span>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="recorded-lesson-card" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 2px solid #39cabb; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3);">
+                        <div class="card-thumb" style="position: relative; cursor: pointer;" onclick="window.open('https://drive.google.com/file/d/1cxL4KijdBzo2va6PzpswQGasSDuqwTcE/view?usp=sharing', '_blank')">
+                            <img src="image/banner-img.jpg" alt="Aula Inaugural Gravada" style="width: 100%; height: 280px; object-fit: cover; opacity: 0.6;">
+                            <div class="play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                <div style="width: 80px; height: 80px; background: #39cabb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 0 30px rgba(57, 202, 187, 0.5);">
+                                    <i class="fa fa-play" style="color: #fff; font-size: 30px; margin-left: 5px;"></i>
+                                </div>
+                                <span style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">Assistir Aula Gravada</span>
+                            </div>
                         </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="hours">00</span>
-                            <span class="countdown-label">Horas</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="minutes">00</span>
-                            <span class="countdown-label">Minutos</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="seconds">00</span>
-                            <span class="countdown-label">Segundos</span>
-                        </div>
-                    </div>
-
-                    <div class="event-cta mt-5">
-                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3" style="gap: 20px;">
-                            <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" class="btn-shine" style="background: #ff3e3e; color: #fff; padding: 22px 50px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 20px; text-transform: uppercase; text-decoration: none; box-shadow: 0 15px 35px rgba(255, 62, 62, 0.4); margin-bottom: 20px;">
-                                ENTRAR NA AULA AGORA <i class="fa fa-video-camera ml-2"></i>
-                            </a>
-                            <a href="https://forms.gle/JnoRWNX1aY9tKkYL6" target="_blank" style="color: #39cabb; padding: 22px 50px; border-radius: 50px; display: inline-block; font-weight: 800; font-size: 18px; text-transform: uppercase; text-decoration: none; border: 2px solid #39cabb; margin-bottom: 20px;">
-                                AINDA NÃO ME INSCREVI <i class="fa fa-pencil ml-2"></i>
+                        <div class="card-body" style="padding: 30px; text-align: center;">
+                            <h3 style="color: #fff; font-size: 22px; font-weight: 800; margin-bottom: 10px;">Aula Inaugural - EndogastroDII PRO</h3>
+                            <p style="color: #39cabb; font-weight: 600; margin-bottom: 25px;">Acesso Gratuito por Tempo Limitado</p>
+                            <a href="https://wa.me/5532998184330?text=Gostaria de saber como ter acesso às próximas aulas da comunidade." target="_blank" style="color: #fff; text-decoration: underline; font-size: 14px; opacity: 0.8;">
+                                Deseja assistir às outras aulas? Clique aqui <i class="fa fa-long-arrow-right ml-1"></i>
                             </a>
                         </div>
-                        <p class="mt-3" style="font-size: 14px; opacity: 0.7;">* Clique no botão vermelho para acessar a sala do Google Meet diretamente.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Event Countdown Section End -->
+    <!-- Enrollment Section End -->
 
     <!-- ===========================about section start============================ -->
     <div id="sobre" class="about-section">
@@ -1142,7 +1126,7 @@
                     <div class="faq-wrapper">
                         <div class="faq-item">
                             <div class="faq-question">Como recebo o meu acesso? <i class="fa fa-chevron-down"></i></div>
-                            <div class="faq-answer">Imediatamente após a confirmação do pagamento, você receberá um e-mail com as instruções e o link exclusivo para entrar no nosso grupo VIP do Telegram.</div>
+                            <div class="faq-answer">Imediatamente após a confirmação do pagamento, você receberá um e-mail com as instruções e o link exclusivo.</div>
                         </div>
                         <div class="faq-item">
                             <div class="faq-question">As aulas ficam gravadas? <i class="fa fa-chevron-down"></i></div>
@@ -1203,6 +1187,7 @@
   <div class="footer-bar"></div>
   <div class="cuppyright-section">
     <p>© Copyright 2026 EndogastroDii Pro. Todos os direitos reservados.</p>
+    <p style="font-size: 13px; opacity: 0.8; margin-top: 5px;">Desenvolvido com excelência estratégica pela agência <a href="https://linktr.ee/otimizesse" target="_blank" style="color: #39cabb; font-weight: 700; text-decoration: none;">otimiZesse</a></p>
   </div>
 </div>
 <!-- ===========================footer section end============================ -->
@@ -1264,34 +1249,6 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- Floating Countdown Widget -->
-    <div class="countdown-float">
-        <div class="float-label">AULA HOJE! CLIQUE AQUI</div>
-        <div class="pulse-ring" style="border-color: #ff3e3e;"></div>
-        <div class="float-icon">
-            <i class="fa-regular fa-clock" style="color: #ff3e3e;"></i>
-        </div>
-        <div class="float-content">
-            <h4>Aula Inaugural</h4>
-            <p style="color: #ff3e3e;">14 de Maio - 19:30</p>
-            <div class="float-timer">
-                <div class="timer-unit">
-                    <span id="float-days">00</span>
-                    <small>Dias</small>
-                </div>
-                <div class="timer-unit">
-                    <span id="float-hours">00</span>
-                    <small>Hrs</small>
-                </div>
-                <div class="timer-unit">
-                    <span id="float-mins">00</span>
-                    <small>Min</small>
-                </div>
-            </div>
-            <a href="https://meet.google.com/pjq-qxzi-ugu" target="_blank" class="float-btn" style="background: #ff3e3e; box-shadow: 0 4px 10px rgba(255, 62, 62, 0.3);">ENTRAR NA AULA AGORA</a>
-        </div>
-    </div>
-
     <!-- FAQ Script -->
     <script>
       document.querySelectorAll('.faq-question').forEach(item => {
@@ -1305,81 +1262,6 @@
               }
           })
       })
-    </script>
-
-    <!-- Countdown Logic -->
-    <script>
-      (function() {
-        const eventDate = new Date('May 14, 2026 19:30:00').getTime();
-
-        // Mobile Toggle Logic
-        const floatWidget = document.querySelector('.countdown-float');
-        if (floatWidget) {
-            floatWidget.addEventListener('click', function(e) {
-                const isBtn = e.target.closest('.float-btn');
-                const isOpen = this.classList.contains('active');
-
-                if (!isOpen) {
-                    // 1º Toque: Abre o widget e bloqueia o redirecionamento imediato
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.classList.add('active');
-                } else {
-                    // 2º Toque (já aberto):
-                    if (isBtn) {
-                        // Se clicou no botão, segue o link normalmente
-                        return;
-                    } else {
-                        // Se clicou em qualquer outra parte do widget aberto, ele fecha
-                        this.classList.remove('active');
-                        e.stopPropagation();
-                    }
-                }
-            });
-
-            // Fechar ao clicar fora
-            document.addEventListener('click', function(e) {
-                if (!floatWidget.contains(e.target)) {
-                    floatWidget.classList.remove('active');
-                }
-            });
-        }
-
-        const timer = setInterval(function() {
-          const now = new Date().getTime();
-          const distance = eventDate - now;
-
-          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          // Update Main Counter
-          if (document.getElementById('days')) {
-            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
-            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
-          }
-
-          // Update Floating Widget
-          if (document.getElementById('float-days')) {
-            document.getElementById('float-days').innerHTML = days.toString().padStart(2, '0');
-            document.getElementById('float-hours').innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById('float-mins').innerHTML = minutes.toString().padStart(2, '0');
-          }
-
-          if (distance < 0) {
-            clearInterval(timer);
-            const countdownEl = document.getElementById('countdown');
-            if (countdownEl) {
-              countdownEl.innerHTML = "<h3 style='color: #39cabb; font-weight: 800; font-size: 32px;'>A AULA JÁ COMEÇOU!</h3><div class='mt-4'><a href='https://meet.google.com/pjq-qxzi-ugu' target='_blank' class='btn btn-danger' style='padding: 15px 40px; border-radius: 50px; font-weight: 800; text-transform: uppercase;'>ACESSAR GOOGLE MEET AGORA <i class='fa fa-video-camera ml-2'></i></a></div>";
-            }
-            const floatWidget = document.querySelector('.countdown-float');
-            if (floatWidget) floatWidget.style.display = 'none';
-          }
-        }, 1000);
-      })();
     </script>
   </body>
 </html>
